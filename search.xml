@@ -1,32 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>动力</title>
-    <url>/2021/05/24/gtl1/</url>
-    <content><![CDATA[<p>有説一流人材是不會有任何壓力，<br>我覺得事情不會如此簡單，<br>不同之處是他們比較懂得去處理情緒，<br>不太介意別人對自己的評價，<br>不會追求沒法掌握虛榮的事物，<br>始終太在意外在的評價，<br>就不可能達到自己真正的目標，<br>活出屬於自己的風格才是最重要，<br>即使有壓力，<br>也能變成一種推動力令自己向前邁進。</p>
-]]></content>
-      <categories>
-        <category>励志</category>
-      </categories>
-      <tags>
-        <tag>gtl</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>幻想和理想</title>
-    <url>/2021/05/24/gtl2/</url>
-    <content><![CDATA[<p>近日聽到有一句説話，<br>大意是有計劃但不去實行，<br>這樣衹是幻想，<br>相反努力去實踐，<br>這就是擁有目標，<br>有天可能真的能實現理想。<br>我認為兩者的分別是在於分柝力，<br>因為單憑幻想，<br>是沒法正確辨識現況，<br>而分柝力則是根據邏輯思考，<br>在研究後再作判斷，<br>確認能夠獲得成果的方法。</p>
-]]></content>
-      <categories>
-        <category>励志</category>
-      </categories>
-      <tags>
-        <tag>gtl</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安全方法论</title>
-    <url>/2021/05/30/%E5%AE%89%E5%85%A8%E6%96%B9%E6%B3%95%E8%AE%BA/</url>
+    <url>/2021/05/30/404/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">给你个建议：别想那么多，先干起来再说。</span><br><span class="line">我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。</span><br><span class="line">为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。</span><br><span class="line">后来为了写更好的 Exploit 学了 C 语言。</span><br><span class="line">再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。</span><br><span class="line">干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。</span><br><span class="line">by tk (https://www.zhihu.com/question/24698474/answer/28671212)</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
 
@@ -74,6 +50,30 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">整就牛。</span><br><span class="line">——黑哥</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>动力</title>
+    <url>/2021/05/24/gtl1/</url>
+    <content><![CDATA[<p>有説一流人材是不會有任何壓力，<br>我覺得事情不會如此簡單，<br>不同之處是他們比較懂得去處理情緒，<br>不太介意別人對自己的評價，<br>不會追求沒法掌握虛榮的事物，<br>始終太在意外在的評價，<br>就不可能達到自己真正的目標，<br>活出屬於自己的風格才是最重要，<br>即使有壓力，<br>也能變成一種推動力令自己向前邁進。</p>
+]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>gtl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>幻想和理想</title>
+    <url>/2021/05/24/gtl2/</url>
+    <content><![CDATA[<p>近日聽到有一句説話，<br>大意是有計劃但不去實行，<br>這樣衹是幻想，<br>相反努力去實踐，<br>這就是擁有目標，<br>有天可能真的能實現理想。<br>我認為兩者的分別是在於分柝力，<br>因為單憑幻想，<br>是沒法正確辨識現況，<br>而分柝力則是根據邏輯思考，<br>在研究後再作判斷，<br>確認能夠獲得成果的方法。</p>
+]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>gtl</tag>
+      </tags>
   </entry>
   <entry>
     <title>javc执行错误</title>
