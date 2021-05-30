@@ -62,6 +62,7 @@
     <title>安全方法论</title>
     <url>/2021/05/30/%E5%AE%89%E5%85%A8%E6%96%B9%E6%B3%95%E8%AE%BA/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">给你个建议：别想那么多，先干起来再说。</span><br><span class="line">我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。</span><br><span class="line">为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。</span><br><span class="line">后来为了写更好的 Exploit 学了 C 语言。</span><br><span class="line">再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。</span><br><span class="line">干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。</span><br><span class="line">by tk (https://www.zhihu.com/question/24698474/answer/28671212)</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一桌菜，十几盘，有荤有素，有凉有热，怎么吃呢？</span><br><span class="line">你可以找一盘看起来好吃的，也可以找一盘离自己近的，都行。但是，得动筷子。</span><br><span class="line">不管怎么吃，最重要的是得动筷子。学技术也是一样。</span><br><span class="line">有的人死活不动筷子，还不断念叨：“我要开始吃了。我马上就要开始吃了。我只要开始吃就能吃饱。</span><br><span class="line">我吃饱了就不饿了。你能不能告诉我该先吃哪一盘？先冷盘后热菜再喝汤这样是不是最好？</span><br><span class="line">但是我听说广东人都是先喝汤？这盘菜会不会太远了？这盘会不会太油腻？我吃饱了万一想拉屎你们这里有厕所吗？</span><br><span class="line">我真的马上就要开始吃了……为什么我现在还是饿？你能不能帮帮我？”  </span><br><span class="line">by tk (https://m.weibo.cn/status/4179050593969473)</span><br></pre></td></tr></table></figure>
 
