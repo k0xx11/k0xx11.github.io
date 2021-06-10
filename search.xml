@@ -55,6 +55,7 @@
     <title>docker-compose安装</title>
     <url>/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过 YAML 文件声明式的定义应用程序的各个服务，并由单个命令完成应用的创建和启动。</p>
+<span id="more"></span>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
 <p>参考文档：<a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
 </blockquote>
