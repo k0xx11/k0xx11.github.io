@@ -6,7 +6,7 @@
   <link href="https://k0xx11.github.io/atom.xml" rel="self"/>
   
   <link href="https://k0xx11.github.io/"/>
-  <updated>2021-06-06T08:06:14.886Z</updated>
+  <updated>2021-06-10T02:46:24.125Z</updated>
   <id>https://k0xx11.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>docker-compose安装</title>
+    <link href="https://k0xx11.github.io/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/"/>
+    <id>https://k0xx11.github.io/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/</id>
+    <published>2021-06-10T02:47:04.638Z</published>
+    <updated>2021-06-10T02:46:24.125Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过</summary>
+        
+      
+    
+    
+    
+    <category term="Docker" scheme="https://k0xx11.github.io/categories/Docker/"/>
+    
+    
+    <category term="docker-compose" scheme="https://k0xx11.github.io/tags/docker-compose/"/>
+    
+  </entry>
   
   <entry>
     <title>2021年度学习规划</title>

@@ -52,6 +52,24 @@
 ]]></content>
   </entry>
   <entry>
+    <title>docker-compose安装</title>
+    <url>/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过 YAML 文件声明式的定义应用程序的各个服务，并由单个命令完成应用的创建和启动。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>参考文档：<a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
+</blockquote>
+<p>确保本机已安装了docker<br>关于docker安装，参考：<a href="https://www.cnblogs.com/qtzd/p/install-Docker.html">https://www.cnblogs.com/qtzd/p/install-Docker.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1、运行此命令下载docker compose的当前稳定版本</span><br><span class="line">[root@localhost ~]# sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">100   633  100   633    0     0    513      0  0:00:01  0:00:01 --:--:--   512</span><br><span class="line">100 12.1M  100 12.1M    0     0  60628      0  0:03:29  0:03:29 --:--:-- 53612</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">-bash: /usr/local/bin/docker-compose: 权限不够</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2、对二进制文件应用可执行权限</span><br><span class="line">[root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"># 3、查看docker-compose版本，可查看到便表示已安装成功v</span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">docker-compose version 1.29.1, build c34c88b2</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# ls /usr/local/bin/</span><br><span class="line">docker-compose</span><br><span class="line"></span><br><span class="line"># 4、可以创建指向路径中任何其他目录的链接</span><br><span class="line">[root@localhost ~]# ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>docker-compose</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>动力</title>
     <url>/2021/05/24/gtl1/</url>
     <content><![CDATA[<p>有説一流人材是不會有任何壓力，<br>我覺得事情不會如此簡單，<br>不同之處是他們比較懂得去處理情緒，<br>不太介意別人對自己的評價，<br>不會追求沒法掌握虛榮的事物，<br>始終太在意外在的評價，<br>就不可能達到自己真正的目標，<br>活出屬於自己的風格才是最重要，<br>即使有壓力，<br>也能變成一種推動力令自己向前邁進。</p>

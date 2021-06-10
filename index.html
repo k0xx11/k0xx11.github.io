@@ -209,6 +209,82 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://k0xx11.github.io/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="k0xx">
+      <meta itemprop="description" content="别想这么多 先干起来再说">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="收手吧阿祖!">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">docker-compose安装</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-10 10:47:04 / 修改时间：10:46:24" itemprop="dateCreated datePublished" datetime="2021-06-10T10:47:04+08:00">2021-06-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Docker/" itemprop="url" rel="index">
+                    <span itemprop="name">Docker</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过 YAML 文件声明式的定义应用程序的各个服务，并由单个命令完成应用的创建和启动。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
+</blockquote>
+<p>确保本机已安装了docker<br>关于docker安装，参考：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/qtzd/p/install-Docker.html">https://www.cnblogs.com/qtzd/p/install-Docker.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 1、运行此命令下载docker compose的当前稳定版本</span><br><span class="line">[root@localhost ~]# sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">100   633  100   633    0     0    513      0  0:00:01  0:00:01 --:--:--   512</span><br><span class="line">100 12.1M  100 12.1M    0     0  60628      0  0:03:29  0:03:29 --:--:-- 53612</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">-bash: /usr/local/bin/docker-compose: 权限不够</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2、对二进制文件应用可执行权限</span><br><span class="line">[root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"># 3、查看docker-compose版本，可查看到便表示已安装成功v</span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">docker-compose version 1.29.1, build c34c88b2</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# ls /usr/local/bin/</span><br><span class="line">docker-compose</span><br><span class="line"></span><br><span class="line"># 4、可以创建指向路径中任何其他目录的链接</span><br><span class="line">[root@localhost ~]# ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://k0xx11.github.io/2021/06/06/todo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -691,20 +767,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
