@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>docker-compose安装</title>
-    <url>/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过 YAML 文件声明式的定义应用程序的各个服务，并由单个命令完成应用的创建和启动。</p>
-<span id="more"></span>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
-<p>参考文档：<a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
-</blockquote>
-<p>确保本机已安装了docker<br>关于docker安装，参考：<a href="https://www.cnblogs.com/qtzd/p/install-Docker.html">https://www.cnblogs.com/qtzd/p/install-Docker.html</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1、运行此命令下载docker compose的当前稳定版本</span><br><span class="line">[root@localhost ~]# sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">100   633  100   633    0     0    513      0  0:00:01  0:00:01 --:--:--   512</span><br><span class="line">100 12.1M  100 12.1M    0     0  60628      0  0:03:29  0:03:29 --:--:-- 53612</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">-bash: /usr/local/bin/docker-compose: 权限不够</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2、对二进制文件应用可执行权限</span><br><span class="line">[root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"># 3、查看docker-compose版本，可查看到便表示已安装成功v</span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">docker-compose version 1.29.1, build c34c88b2</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# ls /usr/local/bin/</span><br><span class="line">docker-compose</span><br><span class="line"></span><br><span class="line"># 4、可以创建指向路径中任何其他目录的链接</span><br><span class="line">[root@localhost ~]# ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Docker</category>
-      </categories>
-      <tags>
-        <tag>docker-compose</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安全方法论</title>
     <url>/2021/05/30/404/</url>
     <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">给你个建议：别想那么多，先干起来再说。</span><br><span class="line">我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。</span><br><span class="line">为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。</span><br><span class="line">后来为了写更好的 Exploit 学了 C 语言。</span><br><span class="line">再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。</span><br><span class="line">干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。</span><br><span class="line">by tk (https://www.zhihu.com/question/24698474/answer/28671212)</span><br></pre></td></tr></table></figure>
@@ -69,6 +50,76 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">整就牛。</span><br><span class="line">——黑哥</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>docker-compose安装</title>
+    <url>/2021/06/10/docker-compose%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Docker Compose是 docker 提供的一个命令行工具，用来定义和运行由多个容器组成的应用。使用 compose，我们可以通过 YAML 文件声明式的定义应用程序的各个服务，并由单个命令完成应用的创建和启动。</p>
+<span id="more"></span>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>参考文档：<a href="https://docs.docker.com/compose/install/">https://docs.docker.com/compose/install/</a></p>
+</blockquote>
+<p>确保本机已安装了docker<br>关于docker安装，参考：<a href="https://www.cnblogs.com/qtzd/p/install-Docker.html">https://www.cnblogs.com/qtzd/p/install-Docker.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1、运行此命令下载docker compose的当前稳定版本</span><br><span class="line">[root@localhost ~]# sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose</span><br><span class="line">  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span><br><span class="line">                                 Dload  Upload   Total   Spent    Left  Speed</span><br><span class="line">100   633  100   633    0     0    513      0  0:00:01  0:00:01 --:--:--   512</span><br><span class="line">100 12.1M  100 12.1M    0     0  60628      0  0:03:29  0:03:29 --:--:-- 53612</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">-bash: /usr/local/bin/docker-compose: 权限不够</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2、对二进制文件应用可执行权限</span><br><span class="line">[root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"># 3、查看docker-compose版本，可查看到便表示已安装成功v</span><br><span class="line">[root@localhost ~]# docker-compose --version</span><br><span class="line">docker-compose version 1.29.1, build c34c88b2</span><br><span class="line"></span><br><span class="line">[root@localhost ~]# ls /usr/local/bin/</span><br><span class="line">docker-compose</span><br><span class="line"></span><br><span class="line"># 4、可以创建指向路径中任何其他目录的链接</span><br><span class="line">[root@localhost ~]# ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Docker</category>
+      </categories>
+      <tags>
+        <tag>docker-compose</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动力</title>
+    <url>/2021/05/24/gtl1/</url>
+    <content><![CDATA[<p>有説一流人材是不會有任何壓力，<br>我覺得事情不會如此簡單，<br>不同之處是他們比較懂得去處理情緒，<br>不太介意別人對自己的評價，<br>不會追求沒法掌握虛榮的事物，<br>始終太在意外在的評價，<br>就不可能達到自己真正的目標，<br>活出屬於自己的風格才是最重要，<br>即使有壓力，<br>也能變成一種推動力令自己向前邁進。</p>
+]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>gtl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>幻想和理想</title>
+    <url>/2021/05/24/gtl2/</url>
+    <content><![CDATA[<p>近日聽到有一句説話，<br>大意是有計劃但不去實行，<br>這樣衹是幻想，<br>相反努力去實踐，<br>這就是擁有目標，<br>有天可能真的能實現理想。<br>我認為兩者的分別是在於分柝力，<br>因為單憑幻想，<br>是沒法正確辨識現況，<br>而分柝力則是根據邏輯思考，<br>在研究後再作判斷，<br>確認能夠獲得成果的方法。</p>
+]]></content>
+      <categories>
+        <category>励志</category>
+      </categories>
+      <tags>
+        <tag>gtl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>javc执行错误</title>
+    <url>/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<p>安装java完成时，我们需要打开cmd验证以下命令是否可以正确执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java -version</span><br><span class="line">java</span><br><span class="line">javac</span><br><span class="line">javac -version</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>而执行javac -version往往会发生问题</p>
+</blockquote>
+<p>这时候我们需要把java的环境变量配置一下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在系统变量新建一个名为CLASSPAST</span><br><span class="line">内容为：</span><br><span class="line">.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</span><br><span class="line">-----------------------------------------------------------------------</span><br><span class="line">系统变量新建一个名为JAVA_HOME</span><br><span class="line">内容为：</span><br><span class="line">E:\java\jdk1.8.0_281 #你安装java的jdk目录</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户变量</span><br><span class="line">点击path再点击编辑</span><br><span class="line">再后面添加俩行内容</span><br><span class="line">%JAVA_HOME%\bin\</span><br><span class="line">%JAVA_HOME%\jre\bin\</span><br></pre></td></tr></table></figure>
+
+
+
+<p>即可，如何重新打开cmd输入命令即可验证成功</p>
+]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
   </entry>
   <entry>
     <title>2021年度学习规划</title>
@@ -137,56 +188,5 @@
     <content><![CDATA[<p><img src="/imagss/p1.jpg" alt="alt"></p>
 <pre>                                  javascript yyds              </pre>
 ]]></content>
-  </entry>
-  <entry>
-    <title>幻想和理想</title>
-    <url>/2021/05/24/gtl2/</url>
-    <content><![CDATA[<p>近日聽到有一句説話，<br>大意是有計劃但不去實行，<br>這樣衹是幻想，<br>相反努力去實踐，<br>這就是擁有目標，<br>有天可能真的能實現理想。<br>我認為兩者的分別是在於分柝力，<br>因為單憑幻想，<br>是沒法正確辨識現況，<br>而分柝力則是根據邏輯思考，<br>在研究後再作判斷，<br>確認能夠獲得成果的方法。</p>
-]]></content>
-      <categories>
-        <category>励志</category>
-      </categories>
-      <tags>
-        <tag>gtl</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动力</title>
-    <url>/2021/05/24/gtl1/</url>
-    <content><![CDATA[<p>有説一流人材是不會有任何壓力，<br>我覺得事情不會如此簡單，<br>不同之處是他們比較懂得去處理情緒，<br>不太介意別人對自己的評價，<br>不會追求沒法掌握虛榮的事物，<br>始終太在意外在的評價，<br>就不可能達到自己真正的目標，<br>活出屬於自己的風格才是最重要，<br>即使有壓力，<br>也能變成一種推動力令自己向前邁進。</p>
-]]></content>
-      <categories>
-        <category>励志</category>
-      </categories>
-      <tags>
-        <tag>gtl</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>javc执行错误</title>
-    <url>/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/</url>
-    <content><![CDATA[<p>安装java完成时，我们需要打开cmd验证以下命令是否可以正确执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">java -version</span><br><span class="line">java</span><br><span class="line">javac</span><br><span class="line">javac -version</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>而执行javac -version往往会发生问题</p>
-</blockquote>
-<p>这时候我们需要把java的环境变量配置一下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在系统变量新建一个名为CLASSPAST</span><br><span class="line">内容为：</span><br><span class="line">.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</span><br><span class="line">-----------------------------------------------------------------------</span><br><span class="line">系统变量新建一个名为JAVA_HOME</span><br><span class="line">内容为：</span><br><span class="line">E:\java\jdk1.8.0_281 #你安装java的jdk目录</span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">用户变量</span><br><span class="line">点击path再点击编辑</span><br><span class="line">再后面添加俩行内容</span><br><span class="line">%JAVA_HOME%\bin\</span><br><span class="line">%JAVA_HOME%\jre\bin\</span><br></pre></td></tr></table></figure>
-
-
-
-<p>即可，如何重新打开cmd输入命令即可验证成功</p>
-]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
   </entry>
 </search>
