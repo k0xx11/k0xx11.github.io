@@ -1,52 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang=zh>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-
-
-<script id="hexo-configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    hostname: new URL('https://k0xx11.github.io').hostname,
-    root: '/',
-    scheme: 'Gemini',
-    version: '7.7.1',
-    exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
-    algolia: {
-      appID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: 'search.xml',
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
-  };
-</script>
-
-  <meta name="description" content="1234567给你个建议：别想那么多，先干起来再说。我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。后来为了写更好的 Exploit 学了 C 语言。再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="1234567给你个建议：别想那么多，先干起来再说。我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。后来为了写更好的 Exploit 学了 C 语言。再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不">
 <meta property="og:type" content="article">
 <meta property="og:title" content="安全方法论">
 <meta property="og:url" content="https://k0xx11.github.io/2021/05/30/404/index.html">
@@ -58,205 +18,135 @@
 <meta property="article:author" content="k0xx">
 <meta property="article:tag" content="Web安全,二进制安全,暗月博客，moonsec.com;">
 <meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>安全方法论</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
 
-<link rel="canonical" href="https://k0xx11.github.io/2021/05/30/404/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome: false,
-    isPost: true
-  };
-</script>
-
-  <title>安全方法论 | 收手吧阿祖!</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="收手吧阿祖!" type="application/atom+xml">
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="收手吧阿祖!" type="application/atom+xml">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" "Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇 " href="/2021/06/06/todo/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇 " href="/2021/05/26/tuc/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部 " href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章 " href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://k0xx11.github.io/2021/05/30/404/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://k0xx11.github.io/2021/05/30/404/&text=安全方法论"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://k0xx11.github.io/2021/05/30/404/&is_video=false&description=安全方法论"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=安全方法论&body=Check out this article: https://k0xx11.github.io/2021/05/30/404/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://k0xx11.github.io/2021/05/30/404/&name=安全方法论&description=&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给你个建议：别想那么多，先干起来再说。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;后来为了写更好的 Exploit 学了 C 语言。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;by tk (https://www.zhihu.com/question/24698474/answer/28671212)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://k0xx11.github.io/2021/05/30/404/&t=安全方法论"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-meta">
-
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">收手吧阿祖!</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
     </div>
-  </div>
-
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+    <div id="toc">
+      
     </div>
-  </div>
-</div>
-
-
-<nav class="site-nav">
-  
-  <ul id="menu" class="menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-
-</nav>
-  <div class="site-search">
-    <div class="popup search-popup">
-    <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="none"
-           placeholder="搜索..." spellcheck="false"
-           type="text" id="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
-  </div>
-</div>
-    </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        安全方法论
+    </h1>
 
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
 
-          <div class="content">
-            
-
-  <div class="posts-expand">
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">k0xx</span>
+      </span>
       
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://k0xx11.github.io/2021/05/30/404/">
+    <div class="postdate">
+      
+        <time datetime="2021-05-30T07:53:39.466Z" itemprop="datePublished">2021-05-30</time>
+        
+      
+    </div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="k0xx">
-      <meta itemprop="description" content="别想这么多 先干起来再说">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="收手吧阿祖!">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          安全方法论
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-05-30 15:53:39 / 修改时间：16:00:33" itemprop="dateCreated datePublished" datetime="2021-05-30T15:53:39+08:00">2021-05-30</time>
-            </span>
-
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
       
-        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">给你个建议：别想那么多，先干起来再说。</span><br><span class="line">我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。</span><br><span class="line">为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。</span><br><span class="line">后来为了写更好的 Exploit 学了 C 语言。</span><br><span class="line">再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。</span><br><span class="line">干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。</span><br><span class="line">by tk (https://www.zhihu.com/question/24698474/answer/28671212)</span><br></pre></td></tr></table></figure>
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">给你个建议：别想那么多，先干起来再说。</span><br><span class="line">我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。</span><br><span class="line">为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。</span><br><span class="line">后来为了写更好的 Exploit 学了 C 语言。</span><br><span class="line">再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。</span><br><span class="line">干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。</span><br><span class="line">by tk (https://www.zhihu.com/question/24698474/answer/28671212)</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
 
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">一桌菜，十几盘，有荤有素，有凉有热，怎么吃呢？</span><br><span class="line">你可以找一盘看起来好吃的，也可以找一盘离自己近的，都行。但是，得动筷子。</span><br><span class="line">不管怎么吃，最重要的是得动筷子。学技术也是一样。</span><br><span class="line">有的人死活不动筷子，还不断念叨：“我要开始吃了。我马上就要开始吃了。我只要开始吃就能吃饱。</span><br><span class="line">我吃饱了就不饿了。你能不能告诉我该先吃哪一盘？先冷盘后热菜再喝汤这样是不是最好？</span><br><span class="line">但是我听说广东人都是先喝汤？这盘菜会不会太远了？这盘会不会太油腻？我吃饱了万一想拉屎你们这里有厕所吗？</span><br><span class="line">我真的马上就要开始吃了……为什么我现在还是饿？你能不能帮帮我？”  </span><br><span class="line">by tk (https://m.weibo.cn/status/4179050593969473)</span><br></pre></td></tr></table></figure>
@@ -303,264 +193,141 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">整就牛。</span><br><span class="line">——黑哥</span><br></pre></td></tr></table></figure>
 
 
-    </div>
-
-    
-    
-    
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>k0xx
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://k0xx11.github.io/2021/05/30/404/" title="安全方法论">https://k0xx11.github.io/2021/05/30/404/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2021/05/26/tuc/" rel="prev" title="吐潮">
-      <i class="fa fa-chevron-left"></i> 吐潮
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/06/06/todo/" rel="next" title="2021年度学习规划">
-      2021年度学习规划 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
   </div>
+</article>
 
 
-          </div>
-          
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
       </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="k0xx"
-      src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">k0xx</p>
-  <div class="site-description" itemprop="description">别想这么多 先干起来再说</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">7</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">4</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/k0xx11" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;k0xx11" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://k0xx11.github.io/atom.xml" title="rss → https:&#x2F;&#x2F;k0xx11.github.io&#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>rss</a>
-      </span>
-  </div>
-
-
-  <div class="links-of-blogroll motion-element">
-    <div class="links-of-blogroll-title">
-      <i class="fa fa-fw fa-link"></i>
-      Links
     </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://www.cnblogs.com/lyshark" title="https:&#x2F;&#x2F;www.cnblogs.com&#x2F;lyshark" rel="noopener" target="_blank">1yshark</a>
-        </li>
-        <li class="links-of-blogroll-item">
-          <a href="https://www.zssnp.top/" title="https:&#x2F;&#x2F;www.zssnp.top" rel="noopener" target="_blank">zssnp</a>
-        </li>
-    </ul>
-  </div>
 
-      </div>
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://k0xx11.github.io/2021/05/30/404/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://k0xx11.github.io/2021/05/30/404/&text=安全方法论"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://k0xx11.github.io/2021/05/30/404/&is_video=false&description=安全方法论"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=安全方法论&body=Check out this article: https://k0xx11.github.io/2021/05/30/404/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://k0xx11.github.io/2021/05/30/404/&title=安全方法论"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://k0xx11.github.io/2021/05/30/404/&name=安全方法论&description=&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;给你个建议：别想那么多，先干起来再说。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;我找到第一个漏洞的时候，还在医院实习，只会写几行批处理。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;为了写 PoC 需要学编程语言，看电脑报介绍过 Perl，就去买了本《Perl 编程 24 学时教程》。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;后来为了写更好的 Exploit 学了 C 语言。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;再后来，为了各种研究读各种 RFC、调各种程序、读各种代码、试各种工具，等等。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;干这行，你永远不知道未来需要会什么。所以什么都可以不会，但不能学不会。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;by tk (https://www.zhihu.com/question/24698474/answer/28671212)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://k0xx11.github.io/2021/05/30/404/&t=安全方法论"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
 
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
 
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">k0xx</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v5.4.0
   </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.1
-  </div>
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
 </div>
 
-
-
-
-
-
-
-
-      </div>
-    </footer>
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2021
+    k0xx
   </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a href="/projects_url">项目</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
   
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
+    })
+  })
+  </script>
 
 
+<script src="/js/main.js"></script>
 
+<!-- search -->
 
-  
-<script src="/js/local-search.js"></script>
+<!-- Google Analytics -->
 
+<!-- Baidu Analytics -->
 
+<!-- Cloudflare Analytics -->
 
+<!-- Umami Analytics -->
 
+<!-- Disqus Comments -->
 
-
-
-
-
-
-
-
-
-  
-
-  
 
 </body>
 </html>
