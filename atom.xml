@@ -68,28 +68,6 @@
   </entry>
   
   <entry>
-    <title>吐潮</title>
-    <link href="https://k0xx11.github.io/2021/05/26/tuc/"/>
-    <id>https://k0xx11.github.io/2021/05/26/tuc/</id>
-    <published>2021-05-26T02:05:00.860Z</published>
-    <updated>2021-05-26T02:08:58.089Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/imagss/p1.jpg&quot; alt=&quot;alt&quot;&gt;&lt;/p&gt;
-&lt;pre&gt;                                  javascript yyds             </summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>幻想和理想</title>
     <link href="https://k0xx11.github.io/2021/05/24/gtl2/"/>
     <id>https://k0xx11.github.io/2021/05/24/gtl2/</id>
@@ -115,32 +93,6 @@
   </entry>
   
   <entry>
-    <title>javc执行错误</title>
-    <link href="https://k0xx11.github.io/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/"/>
-    <id>https://k0xx11.github.io/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/</id>
-    <published>2021-05-24T03:18:44.131Z</published>
-    <updated>2021-05-24T03:23:54.705Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;安装java完成时，我们需要打开cmd验证以下命令是否可以正确执行&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="https://k0xx11.github.io/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://k0xx11.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>动力</title>
     <link href="https://k0xx11.github.io/2021/05/24/gtl1/"/>
     <id>https://k0xx11.github.io/2021/05/24/gtl1/</id>
@@ -162,6 +114,32 @@
     
     
     <category term="gtl" scheme="https://k0xx11.github.io/tags/gtl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javac执行错误</title>
+    <link href="https://k0xx11.github.io/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/"/>
+    <id>https://k0xx11.github.io/2021/05/24/javac%E4%B8%8D%E6%98%AF%E5%86%85%E9%83%A8%E6%88%96%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4,%E4%B9%9F%E4%B8%8D%E6%98%AF%E5%8F%AF%E8%BF%90%E8%A1%8C%E7%9A%84%E7%A8%8B%E5%BA%8F/</id>
+    <published>2021-05-24T03:18:44.131Z</published>
+    <updated>2021-06-19T14:19:31.657Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;安装java完成时，我们需要打开cmd验证以下命令是否可以正确执行&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://k0xx11.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://k0xx11.github.io/tags/Java/"/>
     
   </entry>
   
