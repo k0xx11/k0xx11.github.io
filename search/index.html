@@ -13,8 +13,8 @@
 <meta property="og:site_name" content="k0xx&#39;s Blog!">
 <meta property="og:description" content="别想这么多 先干起来再说">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-19T05:55:31.258Z">
-<meta property="article:modified_time" content="2021-06-19T05:55:31.258Z">
+<meta property="article:published_time" content="2021-06-19T06:14:52.613Z">
+<meta property="article:modified_time" content="2021-06-19T06:14:52.613Z">
 <meta property="article:author" content="k0xx">
 <meta property="article:tag" content="Web安全,二进制安全,暗月博客，moonsec.com;">
 <meta name="twitter:card" content="summary">
@@ -88,23 +88,21 @@
 </header>
 
         
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  
-
-  <div class="content" itemprop="articleBody">
-      
         <section id="search">
-  <form>
-    <input type="text" class="search-input" id="search-input" placeholder="Search...">
-  </form>
-  <div id="search-result"></div>
-  <p class="search-no-result">No results found.</p>
+    <span class="h1"><a href="#">Search</a></span>
+    <form>
+        <div class="row">
+            <div class="col-xs-8 col-md-4">
+                <input type="text" class="search-input" id="search-input" placeholder="search...">
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <button type="reset" class="reset-button" onclick="resetSearch()">reset</button>
+            </div>
+        </div>
+        </form>
+        <div id="search-result"></div>
+        <p class='no-result'>No results found</p>
 </section>
-
-      
-  </div>
-</article>
-
         
         <footer id="footer">
   <div class="footer-left">
@@ -141,6 +139,9 @@
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
 
 
+
+<link href="https://cdn.bootcss.com/flexboxgrid/6.3.1/flexboxgrid.min.css" rel="stylesheet">
+
     <!-- jquery -->
  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
@@ -155,44 +156,9 @@
 
 <!-- search -->
 
-  
+    
 <script src="/js/search.js"></script>
 
-  <script type="text/javascript">
-  $(function() {
-
-    var $inputArea = $("input#search-input");
-    var $resultArea = document.querySelector("div#search-result");
-
-    $inputArea.focus(function() {
-      var search_path = "search.xml";
-      if (search_path.length == 0) {
-        search_path = "search.xml";
-      }
-      var path = "/" + search_path;
-      searchFunc(path, 'search-input', 'search-result');
-    });
-
-    $inputArea.keydown(function(e) {
-      if (e.which == 13) {
-        e.preventDefault();
-      }
-    });
-
-    var observer = new MutationObserver(function(mutationsList, observer) {
-      if (mutationsList.length == 1) {
-        if (mutationsList[0].addedNodes.length) {
-          $(".search-no-result").hide();
-        } else if (mutationsList[0].removedNodes.length) {
-          $(".search-no-result").show(200);
-        }
-      }
-    });
-
-    observer.observe($resultArea, { childList: true });
-
-  });
-  </script>
 
 <!-- Google Analytics -->
 
